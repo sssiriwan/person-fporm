@@ -45,7 +45,7 @@ const PersonTable: React.FC = () => {
     },
   ];
 
-  return <Table dataSource={persons} columns={columns} rowKey="citizenId" pagination={{ pageSize: 5 }} />;
+  return (<div className="table-container"><Table dataSource={persons} columns={columns} rowKey="citizenId" pagination={{ pageSize: 5 }} /></div>) 
 };
 
 export default PersonTable;

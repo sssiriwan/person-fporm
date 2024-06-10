@@ -16,7 +16,7 @@ const PersonForm: React.FC = () => {
   };
 
   return (
-    <Form onFinish={onFinish} layout="vertical" style={{ maxWidth: 600 }}>
+    <Form onFinish={onFinish} layout="vertical" className='person-form' >
       <Form.Item label={t('title')} name="title" rules={[{ required: true }]}>
         <Select>
           <Option value="Mr">{t('Mr')}</Option>
